@@ -1,0 +1,11 @@
+---
+- name: creating first playbook
+  hosts: all
+  tasks:
+	- name: create a new file
+    	  file:
+	  path: /tmp/
+	  mode: 0664
+	  owner: ubuntu
+	  group: ubuntu
+	  state: touch
